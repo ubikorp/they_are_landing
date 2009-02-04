@@ -1,18 +1,8 @@
-= Retweet: A Twitter Application Template
+= They Are Landing
 
-A base application template for building simple Twitter web apps with Sinatra and DataMapper. If you just want to build a simple keyword-based aggregator (such as http://tweetdreams.org), all you need to do is edit <tt>environment.rb</tt> to set the name of your app and the API search keyword(s), edit the CSS, and go.
+A simple Twitter application that caches and rebroadcasts tweets having to do with aliens, UFOs, and exopolitics. Based on the Retweet application template at http://github.com/zapnap/retweet
 
-== Configuration
-
-Dependencies and all configuration is done in <tt>environment.rb</tt>. Your database is also set up here. DataMapper will use sqlite3 by default. Tests use the sqlite3-memory adapter (no configuration needed).
-
-Add your controller actions in <tt>application.rb</tt>. Views for these actions are placed in the <tt>views</tt> directory. Static files, including a stock stylesheet, go in the <tt>public</tt> directory. Models go in the <tt>lib</tt> directory and are auto-loaded. 
-
-== Testing
-
-Rspec is included in the template. Add your specs in <tt>spec</tt>; just require <tt>spec_helper.rb</tt> to pre-configure the test environment. To run the specs:
-
-  rake spec
+Auto-reloads new tweets from the database every X seconds (this capability should probably be cleaned up and added to retweet!). See the <tt>application.js</tt> for the JavaScripty goodness.
 
 == Getting Started
 
