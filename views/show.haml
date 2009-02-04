@@ -1,0 +1,4 @@
+%li{:id => "status_#{status.id}"}
+  .message
+    .text= activate_links(status.text)
+    .author= "by #{profile_link(status.from_user_name)}, #{time_ago_in_words(status.created_at)} ago"
