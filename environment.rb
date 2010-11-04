@@ -17,7 +17,7 @@ configure do
                  :status_length   => 50
                )
 
-  DataMapper.setup(:default, "sqlite3:///#{File.expand_path(File.dirname(__FILE__))}/#{Sinatra::Base.environment}.db")
+  DataMapper.setup(:default, ENV['DATABASE_URL']  || "sqlite3:///#{File.expand_path(File.dirname(__FILE__))}/#{Sinatra::Base.environment}.db")
 
   # load models
   $LOAD_PATH.unshift("#{File.dirname(__FILE__)}/lib")
