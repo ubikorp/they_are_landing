@@ -13,7 +13,7 @@ class Status
              }
 
   property :id,                Serial
-  property :twitter_id,        Integer
+  property :twitter_id,        Integer,  :min => -2**62, :max => 2**62
   property :text,              String,   :length => 0..255
   property :from_user_id,      Integer
   property :from_user_name,    String,   :length => 0..255
