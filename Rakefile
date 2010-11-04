@@ -33,3 +33,6 @@ namespace :twitter do
     puts "#{count} new status updates retrieved"
   end
 end
+
+desc 'Cron update task for Heroku'
+task :cron => 'twitter:update'
