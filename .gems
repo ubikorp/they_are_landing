@@ -4,3 +4,4 @@ dm-postgres-adapter
 dm-migrations
 haml
 twitter
+rspec
