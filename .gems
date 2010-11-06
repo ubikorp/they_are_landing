@@ -4,4 +4,4 @@ dm-postgres-adapter
 dm-migrations
 haml
 twitter
-rspec
+rspec --version '< 2.0'
